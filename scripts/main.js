@@ -54,7 +54,7 @@ function printTeam(people) {
 
 function printModal(people) {
 
-    cleanScreen()
+    cleanModal()
     let tbody = document.getElementById("modal-body");
 
     let title = document.getElementById("exampleModalLabel");
@@ -88,14 +88,13 @@ function printModal(people) {
     thMail.textContent = "Mail";
 
     if (people.contact_info.email == null) {
-        tdMail.innerHTML += "<p> We dont't have any contact info </p>"
+        tdMail.innerHTML += "<p>We dont't have any contact info</p>"
     } else {
         tdMail.innerHTML +=
             `<button type="button" class="btn-info">
                 <a class="btn-info" href="mailto:${people.contact_info.email}">Send me a mail</a>
             </button>`
     }
-
     trNick.append(thNick, tdNick);
     trPhone.append(thPhone, tdPhone);
     trSite.append(thSite, tdSite);
@@ -103,12 +102,12 @@ function printModal(people) {
     tbody.append(trNick, trPhone, trSite, trMail);
 }
 
-function cleanScreen() {
+function cleanModal() {
     let table = document.getElementById("modal-table");
-    let avatar = document.getElementById("avatar");
-
     for (let i = table.rows.length - 1; i >= 0; i--) {
         table.deleteRow(i);
     }
+
+    let avatar = document.getElementById("avatar");
     avatar.innerHTML = "";
 }
