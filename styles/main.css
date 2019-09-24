@@ -1,0 +1,258 @@
+.body {
+    border: 25px solid #f44336;
+    padding: 30px 30px 0 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* LOADER */
+
+.loader{
+    margin-bottom: 20px;
+    width: 200px;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: spin;
+    -moz-animation-duration: 2000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: spin;
+    -ms-animation-duration: 2000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+    from {
+        -ms-transform: rotate(0deg);
+    } to {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    } to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    } to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+#loader {
+    top: 0;
+    left:0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black;
+    background-image: url("/images/background.jpg");
+}
+
+/* /LOADER */
+
+/* HEADER */
+
+#head {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo{
+    width: 300px;
+    height: 60px;
+    margin-bottom: 25px;
+    margin-right: 5px
+}
+
+.title{
+    font-size: 40px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* /HEADER */
+
+/* TABLE */
+
+#teammates {
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#teammates th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+    text-align: left;
+    color: black;
+}
+
+#teammates td {
+    border: 1px solid #f44336;
+    border-right: none;
+    padding-left: 5px;
+    border-left: none;
+}
+
+#teammates tr {
+    height: 50px;
+}
+
+#teammates tr:nth-child(even){background-color: #fde2e0;}
+
+.btn-outline-danger{
+    width: 90%;
+    border-radius: 24px!important;
+    color: #f44336!important;
+    border-color: #f44336!important;
+}
+
+.btn-outline-danger:hover{
+    color: white !important;
+    background-color: #f44336!important;
+}
+
+.btn-outline-danger.focus, .btn-outline-danger:focus {
+    box-shadow: none!important;
+}
+
+/* /TABLE */
+
+/* MODAL */
+
+#modal-table{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.modal-header{
+    width: 94%;
+    margin: auto;
+    border-bottom: none !important;
+}
+
+h5 {
+    margin:auto;
+}
+
+.close {
+    position: absolute !important;
+    margin-left: 400px !important;
+    padding-top: 19px !important;
+}
+
+#modal-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    text-align: left;
+    color: black;
+    border-top: 2px solid #f44336;
+    border-bottom: 2px solid #f44336;
+}
+
+#modal-table td{
+    border-top: 2px solid #f44336;
+    border-bottom: 2px solid #f44336;
+    border-right: none;
+    border-left: none;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar{
+    border-radius: 100px;
+    border: 5px solid #f44336;
+    width:200px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p {
+    margin-bottom: 0px !important;
+}
+
+.btn-info {
+    color: #f44336 !important;
+    font-weight: bold !important;
+    padding-left: 0px !important;
+    border: none !important;
+    background-color: white!important;
+    border-color: white !important;
+}
+
+.btn-info.focus, .btn-info:focus {
+    box-shadow: none!important;
+}
+
+.modal-footer{
+    width:100% !important;
+    border-top: none !important;
+}
+
+.btn-danger {
+    border-radius: 24px!important;
+    background-color: #f44336!important;
+    border-color: #f44336!important;
+}
+
+/* /MODAL */
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+span {
+    color: #f44336;
+}
+
+/* /FOOTER */
