@@ -75,7 +75,7 @@
     justify-content: center;
     text-shadow: 1px 1px 2px black;
     /* background-size: cover; */
-    background-image: url("./images/background.jpg");
+    background-image: url("../images/background.jpg");
 }
 
 /* /LOADER */
