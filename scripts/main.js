@@ -134,7 +134,6 @@ function search() {
     for (let i = 0; i < people.length; i++) {
         if (people[i].name.toUpperCase().indexOf(filter) > -1 || people[i].contact_info.nickName.toUpperCase().indexOf(filter) > -1) {
             tr[i].style.display = "";
-            results++;
         } else {
             table.style.display = "";
             tr[i].style.display = "none";
