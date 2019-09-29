@@ -105,13 +105,62 @@
 
 /* /HEADER */
 
+/* FILTERS */
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 800px;
+    align-items: center;
+}
+.models {
+    display: flex;
+    flex-direction: row;
+}
+label {
+    margin-bottom:  5px !important;
+    margin-right: 15px;
+}
+.two {
+    display: flex;
+    flex-direction: column;
+}
+.check{
+    display:flex;
+    flex-direction: row;
+}
+.checkbox {
+    width: 159px;
+    margin:  0 !important;
+}
+.search-bar  {
+    height: 35px;
+    width: 300px;
+    border-radius: 24px!important;
+    border-color: #f44336!important;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    margin-right: 10px !important;
+}
+
+
+/* /FILTERS */
+
 /* TABLE */
+
+table {
+    table-layout: fixed;
+}
 
 #teammates {
     border-collapse: collapse;
     width: 70%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 #teammates th {
@@ -120,6 +169,11 @@
     padding-left: 5px;
     text-align: left;
     color: black;
+}
+
+.age {
+    color: #f44336!important;
+    border: none;
 }
 
 #teammates td {

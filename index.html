@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>My teammates</title>
 </head>
 
@@ -22,11 +24,80 @@
         <img class="loader" src="images/ubicon.png">
         <p>Please wait, our teammates are coming...</p>
     </div>
+    <div class="filters">
+        <input class="search-bar" type="text" id="myInput" onkeyup="search()" placeholder="Search members...">
+        <div style=display:none class="error">We do not have any coincidence</div>
+        <div class="models">
+            <div class="two">
+                <div class="check">
+                    <div class="checkbox">
+                        <label for="Data"><input type="checkbox" id="Data" value="Data"
+                                onclick="filters();" />Data</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="CTO" value="CTO" onclick="filters();" />CTO</label>
+                    </div>
+                </div>
+                <div class="check">
+                    <div class="checkbox">
+                        <label> <input type="checkbox" id="Master" value="Master" onclick="filters();" />Master</label>
+                    </div>
+                    <label class="checkbox">
+                        <label><input type="checkbox" id="Marketer" value="Marketer"
+                                onclick="filters();" />Marketer</label>
+                    </label>
+                </div>
+                <div class="check">
+                    <div class="checkbox">
+                        <label> <input type="checkbox" id="Events" value="Events" onclick="filters();" />Events</label>
+                    </div>
+                    <div class="checkbox">
+                        <label> <input type="checkbox" id="Sales" value="Sales" onclick="filters();" />Sales</label>
+                    </div>
+                </div>
+            </div>
+            <div class="two">
+                <div class="check">
+                    <div class="checkbox">
+                        <label> <input type="checkbox" id="Mentor" value="Mentor" onclick="filters();" />Mentor</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="Chief" value="The chief" onclick="filters();" />The
+                            Chief</label>
+                    </div>
+                </div>
+                <div class="check">
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="Java" value="Java" onclick="filters();" />Java</label>
+                    </div>
+                    <div class="checkbox">
+                        <label> <input type="checkbox" id="Community" value="Community"
+                                onclick="filters();" />Community</label>
+                    </div>
+                </div>
+                <div class="check">
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="Developer" value="Developer"
+                                onclick="filters();" />Developer</label>
+                    </div>
+                    <div class="checkbox">
+                        <label> <input type="checkbox" id="Designer" value="Designer"
+                                onclick="filters();" />Designer</label>
+                    </div>
+                </div>
+            </div>
+            <div class="checkbox">
+                <label> <input type="checkbox" id="Job" value="Job Placement" onclick="filters();" />Job
+                    Placement</label>
+            </div>
+        </div>
+    </div>
     <table id="teammates">
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Age</th>
+                <th>Age <button onclick="sortTable()" class="age"><i class="fas fa-angle-down"></i> <i
+                            class="fas fa-angle-up"></i></button></th>
                 <th>Role</th>
                 <th>Team</th>
                 <th>Seniority</th>
